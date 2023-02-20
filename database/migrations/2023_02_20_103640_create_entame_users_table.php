@@ -15,6 +15,8 @@ class CreateEntameUsersTable extends Migration
     {
         Schema::create('entame_users', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->integer('rented_device_num');
             $table->timestamps();
         });
     }

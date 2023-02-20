@@ -15,6 +15,11 @@ class CreateEntameDevicesTable extends Migration
     {
         Schema::create('entame_devices', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('device_name');
+            $table->string('device_pattern');
+            $table->string('device_os');
+            $table->string('borrower');
+            $table->string('when_rented');
             $table->timestamps();
         });
     }
