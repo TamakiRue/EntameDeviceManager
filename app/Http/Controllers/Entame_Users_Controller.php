@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Entame_Users
+use App\Entame_Users;
 use Illuminate\Http\Request;
 
 class Entame_Users_Controller extends Controller
