@@ -8,14 +8,14 @@
                 <div class="card-header">Dashboard</div>
 
                 <div class="card-body">
-                    @if (session('status'))
+                    <!-- @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
-                    @endif
-
-                   You are logged in!
-                   Edit Test!!!
+                    @endif -->
+                    <h1>コントローラーからdbの値を取得してみた</h1>
+                    <p>名前:{{$name}}さん</p>
+                    <p>借りている端末の台数:{{$rented_device_num}}台</p>
                 </div>
             </div>
         </div>
