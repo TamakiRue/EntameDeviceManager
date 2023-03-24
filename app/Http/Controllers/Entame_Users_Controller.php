@@ -8,9 +8,10 @@ use Illuminate\Http\Request;
 class Entame_Users_Controller extends Controller
 {
     public function view_entameuser(Request $request,Entame_Users $entame_users){
-        //$guardedに指定していないものは全て取り入れる。
-        $entame_users->update($request->all());
+        $test_id = '1';
 
-        return view('home',compact('name','rented_device_num','created_at','updated_at'));
+        $data = Entame_Users::('id',$test_id)->first();
+
+        return view('home')->with(['data' => $data]);
     }
 }
