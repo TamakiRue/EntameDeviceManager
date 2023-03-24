@@ -10,8 +10,10 @@ class Entame_Users_Controller extends Controller
     public function view_entameuser(Request $request,Entame_Users $entame_users){
         $test_id = '1';
 
-        $data = Entame_Users::('id',$test_id)->first();
+        //$data = Entame_Users::('id',$test_id)->first();
+        $name = 'サンプル';
+        $ented_device_num = 'テスト';
 
-        return view('home')->with(['data' => $data]);
+        return view('home',compact('name','ented_device_num'));
     }
 }

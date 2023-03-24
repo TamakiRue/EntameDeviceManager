@@ -14,8 +14,8 @@
                         </div>
                     @endif -->
                     <h1>コントローラーからdbの値を取得してみた</h1>
-                    <p>名前:{{$data->name}}さん</p>
-                    <p>借りている端末の台数:{{$data->rented_device_num}}台</p>
+                    <p>名前:{{$name}}さん</p>
+                    <p>借りている端末の台数:{{$ented_device_num}}台</p>
                 </div>
             </div>
         </div>
