@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class Entame_Users_Controller extends Controller
 {
-    public function view_entameuser(Request $request,Entame_Users $entame_users){
+    public function view_entameuser(){
         $test_id = '1';
 
         //$data = Entame_Users::('id',$test_id)->first();
